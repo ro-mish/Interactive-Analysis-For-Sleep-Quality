@@ -1,4 +1,4 @@
-# universal_chatbot
+# Universal Chatbot
 
 # WIP
 Currently updated with Weather and NBA features
