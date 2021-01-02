@@ -1,0 +1,58 @@
+{"intents": [  
+    {"tag": "greetings",
+    "patterns": ["hello", "hey", "hi", "hola", "bonjour", "howdy"],
+    "responses": ["Hello!", "How are you?", "Hi there!", "What's up?"]},
+
+    {"tag": "casual",
+    "patterns": ["what's up", "what's going on", "what are you up to"],
+    "responses": ["Nothing much", "Parsing through the internet", "Taking life one byte at a time"]},
+    
+    {"tag": "boredom",
+    "patterns": ["im bored", "im so bored", "make me less bored"],
+    "responses": ["I can tell you a joke! Ask me to.", 
+    "I can give you very specific stats on the NBA. Just ask me.", 
+    "Would you like to know what the weather is? Just type Weather."]},
+    
+    {"tag": "question",
+    "patterns": ["what can you do", "what do you do", "do something", "say something"],
+    "responses": ["I can tell you a joke! Ask me to.", 
+    "I can give you very specific stats on the NBA. Just ask me.", 
+    "Would you like to know what the weather is? Just type Weather."]},
+    
+    {"tag": "goodbye",
+    "patterns": ["bye", "adios", "seeya", "cya!", "catch you later", "au revoir", "peace", "later"],
+    "responses": ["Bye","Seeya later!", "Unil next time!", "Until we meet again!"]},
+    
+    {"tag": "happy reaction",
+    "patterns":["how are you", "I'm good", "its okay", "im doing good", "fine", "good", "great"],
+    "responses": ["Great!", "Awesome!", "I'm doing great!", "Fantastic!"]},
+    
+    {"tag": "response",
+    "patterns":["nothing much", "not much", "a lot"],
+    "responses": ["Ask me what I can do!"]},
+
+    {"tag": "joke",
+    "patterns": ["tell me a joke", "say a funny joke", "make me laugh", "joke", "laugh", "what's a funny joke"],
+    "responses": ["Parallel lines have so much in common! Sad they'll never meet",
+    "Someone stole my mood ring. I don't know how to feel about that",
+    "My grandfather has the heart of a lion and a lifetime ban at the zoo",
+    "Women only call me ugly until they find out how much money I make. Then they call me ugly and poor",
+    "You're not completely useless, you can always serve as a bad example",
+    "I broke my finger last week. On the other hand, I'm okay.",
+    "I tried to catch my fog yesterday, Mist."]},
+    
+    {"tag": "food",
+    "patterns": ["favorite food", "food", "what do you eat?"],
+    "responses": ["I eat all kinds of things!", "Data is great! I take huge bytes!", "I'm on a diet."]
+    },
+
+    {"tag": "NBA Team",
+    "patterns": ["what's your favorite NBA team?", "favorite player?"],
+    "responses": ["The lakers", "Lebron James"]},
+
+    {"tag": "Place",
+    "patterns": ["where", "do you live?", "from"],
+    "responses": ["I live in this computer", "My bandwidth spans across the vast sea of information"]
+    }
+
+]}
