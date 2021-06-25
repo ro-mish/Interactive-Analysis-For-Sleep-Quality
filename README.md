@@ -1,4 +1,4 @@
-# Universal Chatbot
+# GameTime Chatbot
 
 # WIP
 Currently updated with Weather and NBA features
