@@ -1,0 +1,9 @@
+matplotlib>=2.2
+numpy>=1.15.0, <1.21.0
+pandas
+pytest==4.0.1
+tensorflow == 2.9.1
+nltk == 3.7
+keras == 2.9.0
+plotly
+nbformat >= 4.2.0

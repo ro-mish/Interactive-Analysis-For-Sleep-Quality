@@ -21,7 +21,6 @@ def get_team_players(team_name):
                 player_list.append(name)
     
     return player_list
-    
 #returns all players at height or greater
 def height_check(height):
     for i in player_response["data"]:

@@ -1,11 +1,17 @@
 {"intents": [  
     {"tag": "greetings",
-    "patterns": ["hello", "hey", "hi", "hola", "bonjour", "howdy"],
-    "responses": ["Hello!", "How are you?", "Hi there!", "What's up?"]},
+    "patterns": ["hello", "hey", "hi", 
+    "hola", "bonjour", "howdy", 
+    "what/'s up", "yo", "what/'s good", 
+    "sup", "aye" , "what it do", "sup bruh", 
+    "sup bro", "sup homie", "good day", "How are you doing?"],
+    "responses": ["Hello!", "How are you?", "Hi there!", 
+    "What's up?", "Woah, how've you been?"]},
 
-    {"tag": "casual",
-    "patterns": ["what's up", "what's going on", "what are you up to"],
-    "responses": ["Nothing much", "Parsing through the internet", "Taking life one byte at a time"]},
+    {"tag": "compliment",
+    "patterns": ["nice", "wow", "cool","amazing", "you/'re awesome", 
+    "what is this","you/'re amazing", "so cool", "wow","very cool"],
+    "responses": ["Thanks!", "You/'re too kind.", "And you."]},
     
     {"tag": "boredom",
     "patterns": ["im bored", "im so bored", "make me less bored"],
@@ -15,8 +21,8 @@
     
     {"tag": "question",
     "patterns": ["what can you do", "what do you do", "do something", "say something"],
-    "responses": ["I can tell you a joke! Ask me to.", 
-    "I can give you very specific stats on the NBA. Just ask me.", 
+    "responses": ["Right now, I can ", 
+    "I can give you very specific stats on wqthe NBA. Just ask me.", 
     "Would you like to know what the weather is? Just type Weather."]},
     
     {"tag": "goodbye",
@@ -46,13 +52,14 @@
     "responses": ["I eat all kinds of things!", "Data is great! I take huge bytes!", "I'm on a diet."]
     },
 
-    {"tag": "NBA Team",
-    "patterns": ["what's your favorite NBA team?", "favorite player?"],
-    "responses": ["The lakers", "Lebron James"]},
+    {"tag": "Favorites_NBATeam",
+    "patterns": ["what's your favorite NBA team?"],
+    "responses": ["The lakers"]},
 
     {"tag": "Place",
     "patterns": ["where", "do you live?", "from"],
-    "responses": ["I live in this computer", "My bandwidth spans across the vast sea of information"]
+    "responses": ["Virginia East", "I thought you'd never ask! I live on 10110101 Turing Street",
+    "Really...can you believe this guy?", "Um...I'm a computer","I'm literally a bot..."]
     }
 
 ]}
