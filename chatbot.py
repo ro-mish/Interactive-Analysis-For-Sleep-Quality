@@ -84,7 +84,7 @@ def get_response(intents_list,intents_json):
     
             break
     
-    return result
+    return results
 
 def nba_retrieve(message):
     player_list = NBATest.get_team_players(message)    
