@@ -99,7 +99,7 @@ model = Sequential()
 model.add(Dense(128, input_shape=(len(X_train[0]), ), activation = 'relu'))
 
 #dropout probability adjusted
-model.add(Dropout(0.6))
+model.add(Dropout(0.5))
 
 model.add(Dense(64, activation = 'relu'))
 

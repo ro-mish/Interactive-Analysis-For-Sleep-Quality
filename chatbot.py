@@ -25,6 +25,10 @@ words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
 model = load_model('chatbotmodel.h5')
 
+sleep_model = pickle.load(open('sleepEngine/sleep_model.sav', 'rb'))
+
+
+
 def clean_up_sentence(sentence):
     
     sentence_words = nltk.word_tokenize(sentence)
@@ -93,18 +97,62 @@ def weather_retrieve(location):
 
 
 
-print("Bot woke up")
+print("Sleep Bot woke up")
+
+file1 = open('img_robot.txt', 'r')
+Lines = file1.readlines()
+
+
+for line in Lines:
+    time.sleep(0.25)
+    print(line)
 
 check = True
 
 while check:
 
     
-    message = input("type here: ")
+    message = input("[Type here]: ")
     
     if message.lower() in ("done", "bye","end","complete","terminate"):
         
         check = False
+
+    if "sleep" in message.lower():
+
+        print("You can understand how you sleep with a few factors")
+        
+        
+        X = {"Enough":0.0,	
+            "PhoneReach":0.0,	
+            "PhoneTime":0.0,	
+            "Tired":0.0,	
+            "Breakfast":0.0}
+        
+        enough = input("Do you get enough rest? [y/n]: ")
+        phone = input("Is your phone within reach? [y/n]: ")
+        phoneTime = input("Do you spend time on your phone before sleeping? [y/n]: ")
+        tired = input("On a scale of 1-5, how tired are you?: ")
+        breakfast = input("Do you eat breakfast? [y/n]: ")
+
+        if enough == "y":
+            X['Enough'] = 1.0
+        if phone == "y":
+            X["PhoneReach"] = 1.0
+        if phoneTime == "y":
+            X["PhoneTime"] = 1.0
+        X['Tired'] = float(tired)
+
+        if breakfast == "y":
+            X["Breakfast"] = 1.0
+
+        
+
+        
+        out = sleep_model.predict([pd.Series(X)])[0]
+
+        print(f"Your predicted number of hours of sleep is: {out}")
+        continue
 
 
     # if "nba" in message.lower():
@@ -144,7 +192,7 @@ while check:
     
     res = get_response(ints,intents)
     
-    print("Bean: " + res)
+    print("" + res)
     
-print("Goodbye.")
+print("Sleep Bot is successfully asleep...")
     

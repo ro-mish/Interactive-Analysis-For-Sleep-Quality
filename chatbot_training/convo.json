@@ -21,8 +21,8 @@
     
     {"tag": "question",
     "patterns": ["what can you do", "what do you do", "do something", "say something"],
-    "responses": ["Right now, I can ", 
-    "I can give you very specific stats on wqthe NBA. Just ask me.", 
+    "responses": ["Right now, I can predict how many hours of sleep you got based on a few factors. If you want me to do so, type sleep!", 
+    "I can give you very specific stats on the NBA. Just ask me.", 
     "Would you like to know what the weather is? Just type Weather."]},
     
     {"tag": "goodbye",
