@@ -84,7 +84,7 @@ def get_response(intents_list,intents_json):
     
             break
     
-    return results
+    return result
 
 def nba_retrieve(message):
     player_list = NBATest.get_team_players(message)    
@@ -104,7 +104,6 @@ Lines = file1.readlines()
 
 
 for line in Lines:
-    time.sleep(0.25)
     print(line)
 
 check = True
@@ -135,12 +134,24 @@ while check:
         tired = input("On a scale of 1-5, how tired are you?: ")
         breakfast = input("Do you eat breakfast? [y/n]: ")
 
+        if not(type(enough) == str and (enough == "y" or enough == "n")):
+            print("Please respond with only y or n please!")
+        if not(type(phone) == str and (phone == "y" or phone == "n")):
+            print("Please respond with only y or n please!")
+        if not(type(phoneTime) == str and (phoneTime == "y" or phoneTime == "n")):
+            print("Please respond with only y or n please!")
+        if not(type(tired) == int and (tired > 5 or tired < 1)):
+            print("Please respond with only a number between 1 and 5 please!")
+        if not(type(breakfast) == str and (breakfast == "y" or breakfast == "n")):
+            print("Please respond with only y or n please!")
+
         if enough == "y":
             X['Enough'] = 1.0
         if phone == "y":
             X["PhoneReach"] = 1.0
         if phoneTime == "y":
             X["PhoneTime"] = 1.0
+
         X['Tired'] = float(tired)
 
         if breakfast == "y":
