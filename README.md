@@ -7,7 +7,6 @@ It is built using a TensorFlow Deep Learning model that associates user input wi
 
 ### Added Recently:
 - New Statistical model to predict Sleep Patterns
-- Currently updated with Weather and NBA features
 
 ## Instructions
 - Clone repo
